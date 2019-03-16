@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Click Accuracy Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- font awesome for icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- bootstrap styling -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- custom styling -->
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- script file -->
+    <script src="main.js"></script>
+</head>
+<body>
+    <!-- the entire game is in this container -->
+    <div class="custom-container">
+        <!-- stats tab -->
+        <div id="tab" class="row align-items-center" hidden>
+            <span id="score" class="tab col-sm">Score: 0</span>
+            <span id="accuracy" class="tab col-sm">Accuracy: 100.00%</span>
+            <span id="time" class="tab col-sm">Time: <span id="minutes">1</span>:<span id="seconds">00</span></span>
+            <button class="btn btn-danger btn-xs end col-sm"><span class="ml-4">Quit</span></button>
+            
+        </div>
+        <!-- playing area with circles -->
+        <div class="play" hidden>
+
+        </div>
+        <!-- main home page -->
+        <div id="game">
+            <h3 id="end-score" hidden></h3>
+            <h2>Click Accuracy Game!</h2>
+            <button class="btn btn-success btn-sm start">Easy</button>
+            <button class="btn btn-warning btn-sm start">Medium</button>
+            <button class="btn btn-danger btn-sm start">Hard</button>
+            <h3 class="mt-5">High Score: <span id="highscore">0</span></h3>
+            <button class="btn btn-lg" id="settings"><i class="fas fa-cog"></i></button>
+        </div>
+        <!-- settings page -->
+        <div id="settings-page" hidden>
+            <h1 class="mt-4">Settings!</h1>
+            <h4 class="setting ml-4 mt-5">Sound <button class="btn btn-lg" id="toggle-sound"><i class="fas fa-volume-up" id="sound-button"></i></button></h4>
+            <h4 class="setting ml-4 mt-5">Time <span id="setting-value"><input type="text" class="form-control" value="1" id="minute-setting" maxlength="2"> : <input type="text" class="form-control" value="00" id="second-setting" maxlength="2"></span></h4>
+            <button class="btn btn-lg btn-info mr-5" id="about">About</button>
+            <button class="btn btn-success btn-lg ml-5" id="back">Back</button>
+        </div>
+
+        <div id="about-page" hidden>
+            <h1 class="mt-4">About!</h1>
+            <h5 class="mt-5"> <u>About Me</u> </h5>
+            <p class="mx-3">My name is Yousif Kzeer. I designed this game as a part of my project for CS1XA3. I like coding and spent quite some time on this app. I hope you enjoy it. If you want to read more about me, check out my website: <a href="http://yousifkzeer.ca">Yousif Kzeer</a></p>
+            <h5 class="mt-5"> <u>About the Game</u> </h5>
+            <p class="mx-3">This is a simple game that checks your click accuracy and gives you a score. It has different difficulty levels and is very fun to play. You click a circle, you get a point! You miss or click incorrectly, your accuracy goes down.</p>
+            <button class="btn btn-success btn-lg mt-5" id="back-about">Back</button>
+        </div>
+        
+        
+    </div>
+    
+</body>
+</html>

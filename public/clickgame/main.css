@@ -1,0 +1,76 @@
+body {
+    text-align: center;
+    color: white;
+}
+.custom-container  {
+    display: inline-block;
+    margin-top: 5%;
+    height: 550px;
+    width: 500px;
+    overflow: hidden;
+    background:black;
+    border-radius: 5%;
+    
+}
+#game {
+    margin-top: 45%;
+}
+#tab {
+    margin-top: 0;
+    height: 50px;
+    background: gray;
+
+}
+
+.end {
+    text-align: left;
+    height: 100%;
+}
+
+.play {
+    width: 500px;
+    height: 500px;
+}
+.circle {
+    display: block;
+    background: #F70303;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    position: absolute;
+    border: 4px solid #5D3d3d;
+}
+i {
+    color: rgba(80, 80, 80, 1);
+    font-size: 2em;
+}
+#settings {
+    text-align: center;
+    margin-top: 70px;
+}
+
+#back {
+    margin-top: 220px;
+}
+
+.setting {
+    text-align: left;
+}
+
+input {
+    display: inline-block !important;
+    width: 50px !important;
+    text-align: center;
+    
+}
+#setting-value {
+    margin-left: 250px;
+}
+
+#toggle-sound {
+    margin-left: 270px;
+}
+
+.btn-info {
+    margin-top: 220px;
+}
