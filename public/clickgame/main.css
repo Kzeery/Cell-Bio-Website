@@ -78,5 +78,5 @@ input {
 #toggle-sound:focus {
     outline: none;
     box-shadow: none;
-    border: none;
+    border: 1px solid transparent;
 }
