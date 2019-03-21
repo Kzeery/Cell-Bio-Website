@@ -74,3 +74,9 @@ input {
 .btn-info {
     margin-top: 220px;
 }
+
+#toggle-sound:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
