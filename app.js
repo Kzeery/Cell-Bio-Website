@@ -1,6 +1,11 @@
 var express = require("express");
 var app = express();
 var path = require("path");
+var http = require("http");
+setInterval(function() {
+    http.get("http://yousifkzeer.herokuapp.com");
+}, 60 * 1000 * 25);
+
 require("dotenv").config();
 
 app.set("view engine", "ejs");
